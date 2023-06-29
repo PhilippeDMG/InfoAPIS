@@ -1,0 +1,33 @@
+.personajes {
+  width: 100vw;
+  padding: 16px 32px;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+.personaje,
+.imagen {
+  border-radius: 16px;
+}
+.personaje {
+  width: 10vw;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+  /* padding: 16px;
+  align-items: center;
+  justify-content: center; */
+  border: 1px solid gray;
+  padding: 16px;
+  transition: border 0.1s ease-in-out;
+}
+.personaje:hover {
+  cursor: pointer;
+  border: 5px groove var(--celeste);
+}
+.imagen {
+  height: 20vh;
+}
